@@ -1,0 +1,376 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: #f0faff;
+  height: 1200px;
+}
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 200px;
+  background: #4a98f7;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+}
+.nav,
+.nav .nav-links {
+  display: flex;
+  align-items: center;
+}
+.nav {
+  justify-content: space-between;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+.nav .logo {
+  font-size: 25px;
+  font-weight: 500;
+  border:3px #e9e8ee;
+  border-style: solid;
+   margin-left: -90px;
+   border-radius: 8px;
+   padding: 5px 25px;
+}
+.nav .logo:hover{
+
+    color: #19a6ec;
+    background:rgb(229, 226, 227);
+    transition: 0.5s;
+    
+}
+.nav .nav-links {
+  column-gap: 30px;
+  list-style: none;
+  font-size: 20px;
+  margin-right: -90PX;
+}
+.nav .nav-links a {
+  transition: all 0.2s linear;
+}
+.nav .nav-links  :hover{
+    color: #38a1dd;
+    background:rgb(229, 226, 227);
+    transition: 0.5s;
+    border-radius: 10px;
+     
+    
+
+}
+
+
+ 
+ 
+ 
+/* container */
+.containers{
+	max-width: 4000px;
+  height: 500px;
+	 margin:20px;
+   color: #0e0f0f;
+   text-align: center;
+   text-transform: capitalize;
+   font-family: serif;
+  
+     
+}
+.containers h2{
+  padding-top: 40px;
+  text-decoration: underline;
+  font-family: serif;
+}
+
+  
+/* Custom CSS for grid photos */
+.container {
+  max-width: 1200px; /* Set max width for the container */
+  margin: 20px;
+  column-gap: 20px;
+  row-gap: 20px;
+  padding-top: 30px;
+  padding-bottom: -20px;
+   /* Center the container */
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 75px; 
+  margin-top: 20px;/* Negative margin to counteract the default margin */
+}
+
+.col {
+  flex: 25%; /* Each column takes up 25% of the container width */
+  padding: 5px 5px; 
+
+  column-gap: 10px;/* Add spacing between columns */
+}
+
+.photo {
+  border-radius: 15px; /* Add rounded corners to photos */
+  overflow: hidden; /* Hide overflowing content */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow effect to photos */
+}
+
+.photo img {
+  width: 100%;
+  height: 230px; /* Make images fill the entire container */
+  vertical-align: middle; /* Align images vertically */
+  transition: transform 0.3s ease; /* Add smooth transition effect */
+}
+
+.photo:hover img {
+  transform: scale(1.05); /* Scale up the image on hover */
+}
+
+
+@media (max-width:768px){
+  .container{
+      padding:10px;
+      
+      
+       
+  }
+}
+
+@media (max-width:768px){
+  .containers{
+      padding:20px;
+      padding-bottom: 20px;
+      display:inline;
+      
+       
+  }
+}
+.clubs.containers.container{
+  padding:70px;
+  padding-bottom: 20px;
+  display:inline;
+  
+   
+}
+
+@media (max-width:768px){
+.clubs.container.container{
+  padding:20px;
+  height: 1000px;
+}
+}
+@media (max-width:768px){
+.containers h2{
+  padding-top: 200px;
+  text-decoration: underline;
+  font-family: serif;
+}
+}
+
+ 
+
+
+
+
+
+
+
+/* footer section */
+
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+  
+   
+}
+*{
+	margin: 0px;
+	padding:0;
+	box-sizing: border-box;
+  
+}
+.container{
+	max-width: 4000px;
+  height: 340px;
+	 margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 40px 0px 
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(94, 85, 85, 0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	 
+}
+.footer-col .social-links a:hover{
+  color: #24262b;
+	background-color: #f4f434;
+  transform: rotateY(360deg);
+    text-shadow: 0px 0px 10px #ff0095;
+  
+  
+}
+.copy{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.copy .deve{
+  color: blueviolet;
+}
+ 
+
+ 
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+   
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+@media(max-width: 574px){
+  .footer{
+
+    width: 100%;
+    
+    
+}.footer{
+  height: 1000px;
+}
+}
+ 
+
+
+
+
+
+
+
+ 
+
+.nav .navOpenBtn,
+.nav .navCloseBtn {
+  display: none;
+}
+
+/* responsive */
+@media screen and (max-width: 1160px) {
+  .nav {
+    padding: 15px 100px;
+  }
+ 
+@media screen and (max-width: 768px) {
+  .nav .navOpenBtn,
+  .nav .navCloseBtn {
+    display: block;
+  }
+  .nav {
+    padding: 15px 20px;
+  }
+  .nav .nav-links {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    max-width: 280px;
+    width: 100%;
+    padding-top: 100px;
+    row-gap: 30px;
+    flex-direction: column;
+    background-color: #fa3333;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+    z-index: 100;
+  }
+  .nav.openNav .nav-links {
+    left: 0;
+  }
+  .nav .navOpenBtn {
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .nav .navCloseBtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+  }
+}
+.copy{
+  color: black;
+  font-weight: 600;
+  background-color: white;
+}
+}
